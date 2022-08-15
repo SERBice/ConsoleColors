@@ -309,7 +309,16 @@ function parseMessageArgs(msgPrototype, ...args)
 }
 
 //Uncomment this line to use this script as a module
-//export { conPrint, parseMessageArgs, MessageType, MessageEffect, MessageColor, MessageColorBackground };
+//module.exports = { conPrint, parseMessageArgs, MessageType, MessageEffect, MessageColor, MessageColorBackground };
 
-//Use example
+/*
+
+//Use example (inside this module)
 conPrint(MessageType.info, MessageEffect.none, MessageColor.red, MessageColorBackground.white, "This is a \"? ?\" message, or ? ??","Hello","World","not");
+
+
+//Use example (import this module)
+let cons = requite('./console.js');
+conPrint(cons.MessageType.info, cons.MessageEffect.none, cons.MessageColor.red, cons.MessageColorBackground.white, "This is a \"? ?\" message, or ? ??","Hello","World","not");
+
+*/
